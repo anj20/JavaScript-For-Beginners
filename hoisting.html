@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+    
+    <button class="buttons" style="border: 1px solid red;background-color: blue;">
+        Click Me
+    </button>
+    <h1 class="Checker">N/A</h1>
+    <script>
+        (function getperson()
+        {
+            console.log("Your name is equal to",name)
+            console.log("Your address is equal to",name)
+            var name
+        })()
+        // it's called hoisting as it takes the variable name at the bottom as the variable name defined at the top so basically it does is it first choses for the variable then goes to the other function so it's that IIFE.
+
+
+        // the case undefined occurs when the variable is accessed before it is defined normally it occurs when the variable is defined below without the IIFE function....
+        var ele=document.querySelector(".buttons")
+        var ele2=document.querySelector(".Checker")
+        var clicks=0
+        document.addEventListener("click",function(event)
+        {
+            // it's used to add the events to the function on the click it gives the count of the no. of clicks 
+            clicks++;
+            ele2.innerHTML=clicks
+            // console.log(cicks)
+        })
+    </script>
+</body>
+</html>

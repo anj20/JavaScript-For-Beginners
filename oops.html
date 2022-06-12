@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS</title>
+</head>
+<body>
+    
+    <script>
+        class People{
+            constructor(name,food,age)
+            {
+                this.name=name;
+                this.food=food;
+                this.age=age;
+            }
+            myshow()
+            {
+                console.log(this.name+"says mmmm to.."+this.food)
+            }
+        }
+        const ravi=new People("Ravi","fries",30)
+        const duddle=new People("duddle","roll",40)
+        ravi.myshow()
+        duddle.myshow()
+    </script>
+
+</body>
+</html>

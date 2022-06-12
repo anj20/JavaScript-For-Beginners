@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColourChanging</title>
+</head>
+<body>
+    <h1>The Changing Color is:</h1>
+    <div>
+        <label>
+            Enter ur color for background
+        </label>
+        <input type="placeholder" class="backg" style="border: 1px solid red;padding: 2px;width:90px; height: 80px;" >
+    </div>
+    <div>
+        <label>
+            Enter ur color for text
+        </label>
+        <input type="placeholder" class="textg" style="border: 1px solid blueviolet;padding: 2px;width:90px; height: 80px;">>
+    </div>
+
+    <script>
+        var back=document.querySelector(".backg")
+        var textc=document.querySelector(".textg")
+        var bodyele=document.querySelector("body")
+
+        back.addEventListener("keyup",function(event)
+        {
+            bodyele.style.backgroundColor=event.target.value
+        })
+        textc.addEventListener("keyup",function(event)
+        {
+            bodyele.style.color=event.target.value
+        })
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuerySelector</title>
+  </head>
+  <body>
+    <ul>
+      <li>Number 1</li>
+      <li>Number 2</li>
+      <li>Number 3</li>
+      <li>Number 4</li>
+      <li>Number 5</li>
+      <li>Number 6</li>
+      <li>Number 7</li>
+    </ul>
+    <input
+      type="placeholder"
+      value="Rajib"
+      class="form"
+      style="border: 1px solid red; height: 40px; width: 100%; padding: 2px"
+    />
+
+    <script>
+      var lis = document.querySelectorAll("li");
+      var lgh = document.querySelector(".form");
+      lgh.innerHTML = "This is the best guide book for ever";
+      console.log(lgh.innerHTML);
+    </script>
+
+
+  </body>
+</html>

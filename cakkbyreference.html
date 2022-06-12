@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callbyreference</title>
+</head>
+<body>
+    
+    <div id="title"></div>
+    <script>
+        function $(id)
+        {
+            console.log("id is:",id)
+            return document.getElementById(id)
+        }
+        var title =$("title");
+        title.innerText="This is the worst scenario"
+    </script>
+</body>
+</html>

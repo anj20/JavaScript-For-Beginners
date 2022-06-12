@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyup Event Listner</title>
+</head>
+<body>
+    
+    <input class="inputele" style="margin: 0;padding: 0;border-bottom: 1px solid blueviolet;width: 100%;">
+    <h1 class="theshowdown" style="margin: 0;padding: 0;text-decoration: none;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 100;width: 100%;">The value of the inputed text is </h1>
+
+    <script>
+        var ele=document.querySelector(".inputele")
+        var eled=document.querySelector(".theshowdown")
+
+        ele.addEventListener('keyup',function(event){
+            eled.innerHTML=event.target.value
+        })
+    </script>
+</body>
+</html>

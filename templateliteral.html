@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literal</title>
+</head>
+<body>
+    
+
+    <script>
+        // var name="Anurag"
+        // this is the the  template used to get the name as the back side comma so it give the tempalate class so it is used to give the name to console .log
+
+
+        var name=prompt("Enter ur name:")
+        let [firstname,lastname,...everyoneElse]=name.split(' ')
+        
+        obj={
+            'name':'Anurag',
+            'color':'red',
+            'back':'Green'
+        }
+        let{ename,ec,eb}=obj;
+        console.log(ename)
+    </script>
+</body>
+</html>

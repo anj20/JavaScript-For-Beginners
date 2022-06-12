@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1>Events</h1>
+    <input
+      type="text"
+      class="forms"
+      style="border: 2px solid blue; padding: 0 2px 3px 0; margin: 3px"
+    />
+    <button
+      type="button"
+      class="btn-btn"
+      style="border: 1px solid rebeccapurple; background-color: whitesmoke"
+      onclick="calculate()"
+    >
+      ADD 100
+    </button>
+    <h1>Your Ans is:<span>N/A</span></h1>
+    <h3 class="adder">kdfa</h3>
+    <script>
+        var num=100
+        function calculate()
+        {
+            var numb=document.querySelector(".forms")
+            // use querySelector as others will lead to a string so it will give wrong ans
+            var value=Number(numb.value)
+            var totalvalue=value+num
+            var h1=document.querySelectorAll("h1")[1]
+            var numer=h1.querySelector("span")
+            numer.innerHTML=totalvalue
+            var nomber=Number(numb.value)*10000
+            var text="<h1>The value of it is:<small>"+nomber.toFixed(2)+"</small></h1>"
+            document.querySelector("h3").innerHTML=text
+        }
+    </script>
+  </body>
+</html>
